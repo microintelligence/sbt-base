@@ -15,5 +15,5 @@ resolvers in ThisBuild ++= Seq( "Sonatype releases" at "https://oss.sonatype.org
 lazy val root = ( project in file( "." ) )
 
 // placeholder for child modules
-lazy val child = ( project in file( "child" ) ).settings( libraryDependencies ++= Seq() )
+lazy val child = ( project in file( "child" ) ).settings( libraryDependencies ++= slf4j ++ logback )
 
